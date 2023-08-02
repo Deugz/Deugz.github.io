@@ -23,7 +23,7 @@ blog_title = "Blog Blog"
 
 # Base URL for the website, required for generating feeds.
 # e.g. blog_baseurl = "http://example.com/"
-blog_baseurl = ""
+blog_baseurl = "https://deugz.github.io/ab-blog/_website/index.html"
 
 # Choose to archive only post titles. Archiving only titles can speed
 # up project building.
@@ -107,7 +107,7 @@ blog_authors = {
 # In addition, there are authors.html, languages.html, and locations.html
 # sidebars that link to author and location archive pages.
 html_sidebars = {
-    '**': [ 'ablog/postcard.html', 'navigation.html',
+    '**': [ 'ablog/postcard.html', 
             'ablog/recentposts.html', 'ablog/tagcloud.html',
             'ablog/categories.html',  'ablog/archives.html',
             'searchbox.html',
@@ -196,6 +196,13 @@ extensions = [
     'sphinx.ext.todo',
     'alabaster',
     'ablog',
+    "myst_nb",
+    "ablog",
+    "sphinx_design",
+    "sphinx_copybutton",
+    "sphinx_examples",
+    "sphinxext.opengraph",
+    "sphinxext.rediraffe",
 ]
 
 # The suffix(es) of source filenames.
@@ -270,7 +277,9 @@ todo_include_todos = False
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'alabaster'
+#html_theme = 'alabaster'
+html_theme = 'pydata_sphinx_theme'
+
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -280,7 +289,7 @@ html_theme_options = {
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = [alabaster.get_path()]
+#html_theme_path = [alabaster.get_path()]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
