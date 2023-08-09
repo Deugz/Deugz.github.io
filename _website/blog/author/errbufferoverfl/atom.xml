@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://deugz.github.io/ab-blog/_website/index.html</id>
+  <title>Blog - Posts by errbufferoverfl</title>
+  <updated>2023-08-09T10:55:27.086210+00:00</updated>
+  <link href="https://deugz.github.io/ab-blog/_website/index.html"/>
+  <link href="https://deugz.github.io/ab-blog/_website/index.html/blog/author/errbufferoverfl/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.4.post1">ABlog</generator>
+  <entry>
+    <id>https://deugz.github.io/ab-blog/_website/index.html/posts/2023/post/</id>
+    <title>Ooh, name it after me!</title>
+    <updated>2018-11-21T00:00:00+01:00</updated>
+    <author>
+      <name>errbufferoverfl</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;I’ll get my kit! That’s not soon enough! Anyone who laughs is a communist! I’m a thing.&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://deugz.github.io/ab-blog/_website/index.html/posts/2023/post/" rel="alternate"/>
+    <summary>I’ll get my kit! That’s not soon enough! Anyone who laughs is a communist! I’m a thing.</summary>
+    <category term="candy" label="candy"/>
+    <category term="example" label="example"/>
+    <category term="futurama" label="futurama"/>
+    <category term="laughing" label="laughing"/>
+    <published>2018-11-21T00:00:00+01:00</published>
+  </entry>
+</feed>

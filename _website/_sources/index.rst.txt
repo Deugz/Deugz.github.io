@@ -1,4 +1,3 @@
-
 .. Blog index file, created by `ablog start` on Thu Jul 27 16:47:52 2023.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
@@ -6,7 +5,7 @@
 Welcome to Vincent Deguin's Blog!
 ================================
 
-Hello World! Find more about me here: :ref:`about`
+Hello World! Find more about me here: :ref:`Intro`
 
 
 Here is a list of most recent posts:
@@ -25,5 +24,5 @@ Here is a list of most recent posts:
 .. toctree::
    :hidden:
 
-   about.rst
+   Intro.rst
 

@@ -19,7 +19,12 @@ import alabaster
 # blog_path = 'blog'
 
 # The "title" for the blog, used in active pages.  Default is ``'Blog'``.
-blog_title = "Blog Blog"
+blog_title = "Blog"
+
+# The path that you store your content in, this will be used for the browsing path
+# on your published website
+# e.g. blog_post_pattern = "blog/*/*"
+blog_post_pattern = "posts/*/*"
 
 # Base URL for the website, required for generating feeds.
 # e.g. blog_baseurl = "http://example.com/"
@@ -64,18 +69,18 @@ blog_authors = {
 # -- Blog Post Related --------------------------------------------------------
 
 # Format date for a post.
-# post_date_format = '%%b %%d, %%Y'
+post_date_format = '%%b %%d, %%Y'
 
 # Number of paragraphs (default is ``1``) that will be displayed as an excerpt
 # from the post. Setting this ``0`` will result in displaying no post excerpt
 # in archive pages.  This option can be set on a per post basis using
-# post_auto_excerpt = 1
+post_auto_excerpt = 1
 
 # Index of the image that will be displayed in the excerpt of the post.
 # Default is ``0``, meaning no image.  Setting this to ``1`` will include
 # the first image, when available, to the excerpt.  This option can be set
 # on a per post basis using :rst:dir:`post` directive option ``image``.
-# post_auto_image = 0
+post_auto_image = 0
 
 # Number of seconds (default is ``5``) that a redirect page waits before
 # refreshing the page to redirect to the post.
@@ -119,7 +124,7 @@ html_sidebars = {
 # Turn feeds by setting :confval:`blog_baseurl` configuration variable.
 # Choose to create feeds per author, location, tag, category, and year,
 # default is ``False``.
-# blog_feed_archives = False
+blog_feed_archives = True
 
 # Choose to display full text in blog feeds, default is ``False``.
 # blog_feed_fulltext = False
@@ -161,7 +166,7 @@ html_sidebars = {
 # fontawesome_link_cdn = None
 
 # Sphinx_ theme already links to `Font Awesome`_.  Default: ``False``
-# fontawesome_included = False
+fontawesome_included = True
 
 # Alternatively, you can provide the path to `Font Awesome`_ :file:`.css`
 # with the configuration option: fontawesome_css_file
@@ -204,6 +209,9 @@ extensions = [
     "sphinxext.opengraph",
     "sphinxext.rediraffe",
 ]
+
+# Add any paths that contain templates here, relative to this directory.
+templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
 source_suffix = ".rst"
@@ -279,14 +287,66 @@ todo_include_todos = False
 # a list of builtin themes.
 #html_theme = 'alabaster'
 html_theme = 'pydata_sphinx_theme'
-
+html_logo = "_static/Logo/Encyclopedia-logo.png"
+html_favicon = "_static/Logo/Encyclopedia-logo.png"
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    'github_button': False,
+    "analytics": {"google_analytics_id": "G-CVXKMF7CV3"},
+#    "external_links": [
+#        {
+#            "url": "https://deugz.github.io/sp-Science_Journey/build/html/index.html",
+#            "name": "&nbsp &nbsp &nbsp &nbsp 💫 Science",
+#           "attributes": {"target": "_blank"},
+#        },
+#    ],
+    "header_links_before_dropdown": 11,    
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/Deugz/Encyclopedia-Home",
+            "icon": "fa-brands fa-github",
+        },
+        {
+            "name": "Home",
+            "url": "https://deugz.github.io/Encyclopedia-Home/build/html/index.html",
+            "icon": "fa-solid fa-house",
+        },
+        {
+            "name": "Profile",
+            "url": "https://deugz.github.io/nb-profile/_build/html/intro.html",
+            "icon": "fa-solid fa-user",
+        },
+        {
+            "name": "Blog",
+            "url": "https://deugz.github.io/ab-blog/_website/index.html",
+            "icon": "fa-solid fa-blog",
+        },
+        {
+            "name": "Tools",
+            "url": "https://deugz.github.io/nb-tools/_build/html/intro.html",
+            "icon": "fa-solid fa-screwdriver-wrench",
+        },
+        {
+            "name": "Forum",
+            "url": "https://deugz.github.io",
+            "icon": "fa-solid fa-comments",
+        },
+    ],   
+
+    "logo": {
+        "text": " &nbsp Blog &nbsp ",
+        "image_dark": "_static/Logo/Encyclopedia-logo.png",
+        "alt_text": " &nbsp V. Deguin &nbsp &nbsp",
+    },
+    
+    
+    "navbar_start": ["navbar-logo"],
+    
 }
+
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = [alabaster.get_path()]
@@ -373,6 +433,3 @@ html_static_path = ["_static"]
 htmlhelp_basename = "Blogdoc"
 
 github_pages = 'Deugz'
-
-
-
